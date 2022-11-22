@@ -16,7 +16,7 @@ export function TaskList() {
 
   function handleCreateNewTask() {
     if (!newTaskTitle) {
-      return alert("O título não pode ser vazio");
+      return;
     }
 
     const newTask = { id: Date.now(), title: newTaskTitle, isComplete: false };
